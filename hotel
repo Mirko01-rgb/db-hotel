@@ -13,6 +13,6 @@ SELECT * FROM ospiti;
 SELECT * FROM ospiti WHERE document_type LIKE 'CI';
 SELECT * FROM paganti WHERE ospite_id IS NOT NULL;
 SELECT * FROM stanze WHERE floor LIKE 1;
-SELECT name, lastname FROM ospiti WHERE name LIKE 'D%';
+SELECT name, lastname FROM ospiti WHERE name LIKE 'E%';
 SELECT date_of_birth, YEAR(now())- YEAR(date_of_birth) AS 'age 'FROM ospiti WHERE YEAR(now())- YEAR(date_of_birth) < 30;
 SELECT * FROM prenotazioni WHERE MONTH(created_at) < 5;
